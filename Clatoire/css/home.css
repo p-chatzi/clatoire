@@ -7,7 +7,6 @@
 }
 
 header{
-    width: 100%;
     background-color: var(--color-belge);
     margin: -0.5vw;
     overflow: hidden;
@@ -43,7 +42,7 @@ body{
     background: var(--color-belge);
 }
 
-.links{
+.links-docs{
     text-align: center;
     border: 2px solid var(--color-blue);
     background: var(--color-belge);
@@ -55,4 +54,26 @@ body{
     margin-top: 15vh;    
     height: auto;
     max-width: 100%;
+}
+
+nav{
+    float: center;
+}
+
+nav li{
+    margin-right: 5vw;
+    display: inline;
+}
+
+a:link, a:visited {
+    color: var(--color-blue);
+}
+
+a:hover {
+    color: var(--color-belge);
+    background-color: var(--color-red);
+}
+  
+a:active {
+    color: var(--color-white);
 }

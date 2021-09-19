@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Peter Chatzigianis">
+    <meta name="description" content="Le reportoire pour ses classes">
+    <meta name="keywords" content="CIN1, Html, Css">
     <title> TP1 Chatzigianis Peter </title>
     <link href="../TP1/tp1-cin1.css" rel="stylesheet">
 </head>
@@ -12,35 +15,97 @@
 <body>
 
     <header>
-        <p> Clatoire - Le reportoire pour ses classes ! </p>
+        <span> Clatoire - Le reportoire pour ses classes ! </span>
+        <nav>
+            <ul>
+                <li>
+                    <a class="links" href="../html/home.html"> Accueil </a>
+                </li>
+                <li>
+                    <a class="links" href="../html/docs.html"> Repertoire </a>
+                </li>
+                <li>
+                    <a class="links" href="../html/16-09-21.html"> 16-09 </a>
+                </li>
+                <li>
+                    <a class="active links" href="tp1-cin1.html"> TP1 </a>
+                </li>
+            </ul>
+        </nav>
+
         <div class="header-icons">
             <img src="../gfx/icons8_document.ico" alt="icon folder">
             <img src="../gfx/icons8_mail.ico" alt="icon mail">
         </div>
     </header>
-
+    <!-- 
     <h2><a href="../html/home.html"> [TEMP] Home </a></h2>
     <h2><a href="../html/docs.html"> [TEMP] Docs </a></h2>
-    <h2><a href="../html/16-09-21.html"> [TEMP] Classe du 16-09-21 </a></h2>
+    <h2><a href="../html/16-09-21.html"> [TEMP] Classe du 16-09-21 </a></h2> -->
 
-
-    <div class="grid-container">
+    <span class="grid-container">
         <h1 class="title"> TP1 [CIN1] </h1>
-
-        <!-- Left side Content [Examples & Demos] -->
-        <div class="guide">
+        <!-- Left content block -->
+        <div class="left-side">
+            <h2 id="left-title"> Loren : </h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer interdum turpis sed bibendum dignissim.
+                Nullam eget bibendum leo, id tempor lectus. Nam porta egestas est sed gravida.
+                Curabitur ultricies nisi at mattis venenatis. Vestibulum volutpat turpis ante, fermentum eleifend massa
+                consequat quis.
+                Sed ultricies et dui id hendrerit.
+            <p>
+                Morbi a suscipit purus. Nullam vitae odio in nibh fringilla fringilla in et purus.
+                Maecenas vitae lacus mi. Duis tincidunt, ipsum nec cursus mattis, odio elit commodo metus,
+                at consectetur mauris lacus eu massa. Donec scelerisque consectetur purus, at placerat augue varius vel.
+            </p>
+            <p>
+                Etiam vel metus sagittis, euismod orci a, gravida turpis. Aenean finibus nunc libero, non suscipit
+                libero facilisis vel. Morbi venenatis semper lobortis. Praesent turpis leo, pretium sit amet sagittis
+                at, mollis sed ipsum. Donec suscipit lectus a sem dapibus, nec varius lacus ornare. Proin nunc velit,
+                pretium vel nisi eu, tempus scelerisque metus. Phasellus fringilla maximus erat ac
+                pulvinar. Nullam ullamcorper nunc vel enim egestas egestas. Suspendisse elementum justo quis pharetra
+                congue.
+            </p>
+            <p>
+                Nulla pharetra gravida dolor. Nam malesuada dolor vel rhoncus pretium. Morbi tempus nisi in pellentesque
+                pharetra. Pellentesque id lacus a metus fringilla eleifend eu at elit. Praesent eget ipsum vel urna
+                interdum hendrerit. Nulla facilisi. Pellentesque in consectetur enim, non tincidunt urna. Phasellus
+                viverra tincidunt elit, ac ullamcorper mi faucibus sit amet. Mauris eleifend dui id mi viverra, id
+                maximus dolor tempor. Donec tempus nulla id eros egestas, varius vulputate quam mollis.
+            </p>
+            <p>
+                Quisque diam augue, mattis nec diam in, fermentum iaculis quam. In hac habitasse platea dictumst. Donec
+                accumsan libero arcu, in condimentum enim laoreet ut. Morbi sed sodales elit, a imperdiet tellus.
+                Pellentesque tincidunt dapibus feugiat. Aenean volutpat sem et fermentum tincidunt. Maecenas sed aliquam
+                ante. Quisque dignissim suscipit nisi sed tempor.
+            </p>
+            </p>
         </div>
 
-        <!-- Right side Content [What we've seen] -->
-        <div class="links">
+        <!-- Right content block -->
+        <div class="right-side">
+            <h2 id="right-title"> Articles : </h2>
+            <article class="articles"> Article1 </article>
+            <article class="articles"> Article2 </article>
+            <article class="articles"> Article3 </article>
+            <aside id="mainSectionaside">
+                <p> Vive boostrap !</p>
+                <img src="../gfx/pub.png" alt="c'est une pub">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </aside>
+
+            <span><br> Zoning de Clatoire : <br></span>
+            <img src="../gfx/zoningClatoire1.png" alt="clatoire zoning">
+            <img src="../gfx/zoningClatoire2.png" alt="clatoire zoning">
+            <img src="../gfx/zoningClatoire3.png" alt="clatoire zoning">
+
         </div>
-    </div>
+    </span>
+
+    <footer>
+        Clatoire
+    </footer>
 </body>
 
 </html>
-
-
-<!-- This should go in the demos page (For 16/09 class) not docs ! 
-
-
--->

@@ -7,7 +7,6 @@
 }
 
 header{
-    width: 100%;
     background-color: var(--color-belge);
     margin: -0.5vw;
     overflow: hidden;
@@ -43,7 +42,7 @@ body{
     background: var(--color-belge);
 }
 
-.links{
+.links-tp{
     text-align: center;
     border: 2px solid var(--color-blue);
     background: var(--color-belge);
@@ -57,11 +56,16 @@ body{
     max-width: 100%;
 }
 
-a:link {
-    color: var(--color-blue);
+nav{
+    float: center;
 }
-  
-a:visited {
+
+nav li{
+    margin-right: 5vw;
+    display: inline;
+}
+
+a:link, a:visited {
     color: var(--color-blue);
 }
 

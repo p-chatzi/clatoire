@@ -7,11 +7,23 @@
 }
 
 header{
-    width: 100%;
     background-color: var(--color-belge);
     margin: -0.5vw;
     overflow: hidden;
     font-weight: bold;
+    min-height: 5vh; 
+    margin-bottom: 1vh;
+}
+
+
+footer{
+    background-color: var(--color-belge);
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1vh;
+    min-height: 3vh; 
 }
 
 .header-icons{
@@ -30,38 +42,71 @@ body{
 }
 
 .title{
-    text-align: center;
-    margin-bottom: 20vh;
     grid-row: 1;
     grid-column: 4/5;
+    text-align: center;
+    margin-bottom: 20vh;
 }
 
-.guide{
+.left-side{
     grid-row: 3/13;
     grid-column: 1/4;
     border: 2px solid var(--color-blue);
     background: var(--color-belge);
+    font-variant: small-caps;
+    text-align: justify;
 }
 
-.links{
-    text-align: center;
-    border: 2px solid var(--color-blue);
-    background: var(--color-belge);
+.right-side{
     grid-row: 3/13;
     grid-column: 5/8;
+    border: 2px solid var(--color-blue);
+    background: var(--color-belge);
+    text-align: center;
 }
 
-.img-links{
-    margin-top: 15vh;    
+img{
     height: auto;
-    max-width: 100%;
+    max-width: 30%;
+    transition:transform 0.25s ease;
 }
 
-a:link {
-    color: var(--color-blue);
+#mainSectionaside:hover{ 
+    background: var(--color-belge);
 }
-  
-a:visited {
+
+nav{
+    float: center;
+}
+
+nav li{
+    margin-right: 5vw;
+    display: inline;
+}
+
+img:hover {
+    transform:scale(1.8);
+}
+
+.right-side .articles{
+    background-color:greenyellow;
+}
+
+.right-side .articles:hover{
+    background-color: green;
+}
+
+#right-title, #left-title, div:hover{
+    background-color: var(--color-white);
+    color: black;
+}
+
+p::first-letter{
+    color: black;
+    font-size: larger;
+}
+
+a:link, a:visited, p::first-line {
     color: var(--color-blue);
 }
 
