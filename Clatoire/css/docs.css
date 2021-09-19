@@ -56,3 +56,20 @@ body{
     height: auto;
     max-width: 100%;
 }
+
+a:link {
+    color: var(--color-blue);
+}
+  
+a:visited {
+    color: var(--color-blue);
+}
+
+a:hover {
+    color: var(--color-belge);
+    background-color: var(--color-red);
+}
+  
+a:active {
+    color: var(--color-white);
+}
