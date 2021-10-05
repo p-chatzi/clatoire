@@ -11,6 +11,33 @@ header{
     margin: -0.5vw;
     overflow: hidden;
     font-weight: bold;
+    min-height: 5vh; 
+    margin-bottom: 1vh;
+    display: flex;
+    text-align: center;
+}
+
+.header-title{
+    width: 20%;
+}
+
+.navbar{
+    width: 50%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.header-icons{
+    float: right;
+    width: 20%;
+}
+
+.header-icons img{
+    flex-wrap: wrap;
+}
+
+.active{
+    background-color:palegoldenrod;
 }
 
 footer{
@@ -40,35 +67,47 @@ body{
 }
 
 .title{
-    text-align: center;
-    margin-bottom: 20vh;
     grid-row: 1;
     grid-column: 4/5;
+    text-align: center;
+    margin-bottom: 20vh;
 }
 
-.guide{
-    grid-row: 3/13;
+.left-side-top{
+    grid-row: 3/7;
     grid-column: 1/4;
     border: 2px solid var(--color-blue);
     background: var(--color-belge);
 }
 
-.links-tp{
-    text-align: center;
+.right-side-top{
+    grid-row: 3/7;
+    grid-column: 5/8;
     border: 2px solid var(--color-blue);
     background: var(--color-belge);
-    grid-row: 3/13;
+}
+
+.left-side-bot{
+    grid-row: 9/13;
+    grid-column: 4/1;
+    border: 2px solid var(--color-blue);
+    background: var(--color-belge);
+}
+
+.right-side-bot{
+    grid-row: 9/13;
     grid-column: 5/8;
+    border: 2px solid var(--color-blue);
+    background: var(--color-belge);
 }
 
-.img-links{
-    margin-top: 15vh;    
+img{
     height: auto;
-    max-width: 100%;
+    max-width: 30%;
 }
 
-nav{
-    float: center;
+#mainSectionaside:hover{ 
+    background: var(--color-belge);
 }
 
 nav li{
@@ -120,4 +159,20 @@ a:link, a:visited {
 .dropdown:hover .dropbtn{
     background-color: var(--color-red);
     color: var(--color-white);
+}
+
+.git-img{
+    height: 85%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.git-txt{
+    height: 100%;
+    display: inline-block;
+}
+
+.left-side-top:hover{
+    background-color: var(--color-green);
+    opacity: 1;
 }

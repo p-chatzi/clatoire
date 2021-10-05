@@ -23,6 +23,17 @@ footer{
     bottom: 0;
     width: 100%;
     margin-top: 1vh;
+    min-height: 3vh;
+    margin-left: -8px; 
+}
+
+footer{
+    background-color: var(--color-belge);
+    font-weight: bold;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 1vh;
     min-height: 3vh; 
 }
 
@@ -75,9 +86,6 @@ img{
     background: var(--color-belge);
 }
 
-nav{
-    float: center;
-}
 
 nav li{
     margin-right: 5vw;
@@ -116,5 +124,38 @@ a:hover {
 }
   
 a:active {
+    color: var(--color-white);
+}
+
+.dropbtn{
+    background-color: var(--color-red);
+    color: var(--color-belge);
+}
+
+.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: var(--color-belge);
+    min-width: 100px;
+    box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.3);
+}
+
+.dropdown-content a{
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown:hover .dropbtn{
+    background-color: var(--color-red);
     color: var(--color-white);
 }

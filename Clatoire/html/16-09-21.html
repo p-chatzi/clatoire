@@ -8,6 +8,7 @@
     <meta name="author" content="Peter Chatzigianis">
     <meta name="description" content="Le reportoire pour ses classes">
     <meta name="keywords" content="CIN1, Html, Css">
+    <link rel="icon" href="../gfx/logo.png">
     <title> Clatoire </title>
     <link href="../css/16-09-21.css" rel="stylesheet">
 </head>
@@ -16,22 +17,36 @@
 
     <header>
         <span> Clatoire - Le reportoire pour ses classes ! </span>
-        <nav>
-            <ul>
-                <li>
-                    <a class="links" href="../html/home.html"> Accueil </a>
-                </li>
-                <li>
-                    <a class="links" href="../html/docs.html"> Repertoire </a>
-                </li>
-                <li>
-                    <a class="active links" href="16-09-21.html"> 16-09 </a>
-                </li>
-                <li>
-                    <a class="links" href="../TP1/tp1-cin1.html"> TP1 </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="links" href="../html/home.html"> Accueil </a>
+                    </li>
+                    <li>
+                        <a class="links" href="../html/docs.html"> Repertoire </a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> \/ Cours \/ </button>
+                            <div class="dropdown-content">
+                                <a class="active links" href="16-09-21.html"> 16-09 </a>
+                                <a class="links" href="30-09-21.html"> 30-09 </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> \/ TPs \/ </button>
+                            <div class="dropdown-content">
+                                <a class="links" href="../TP1/tp1-cin1.html"> TP1 </a>
+                                <a class="links" href="../TP2/tp2-cin1.html"> TP2 </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div class="header-icons">
             <img src="../gfx/icons8_document.ico" alt="icon folder">
             <img src="../gfx/icons8_mail.ico" alt="icon mail">
@@ -62,7 +77,7 @@
             Avec le css on peut redefinir la couleur du texte et du fond <br>
             En le combinant aux pseudos-classes, on peut changer ces couleurs sur un etat d'un element <br>
             (comme pour le lien ci dessous - On change son fond et sa couleur lorsqu'on passe la souris dessus)<br>
-            <h3><a href="docs.html"> Retour au repertoire </a><br></h3>
+            <h3><a class="links" href="docs.html"> Retour au repertoire </a><br></h3>
 
         </div>
 
@@ -70,18 +85,21 @@
         <div class="links-tutorial">
             <h2 class="links-title"> -- Notions vus -- <br></h2>
             <br>HTML<br>
-            <a href="https://www.w3schools.com/Tags/"> Liste de tous les tags <br></a>
-            <a href="https://www.w3schools.com/tags/tag_meta.asp"> Tags meta <br></a>
-            <a href="https://www.w3schools.com/html/html_elements.asp"> Elements <br></a>
+            <a class="links" href="https://www.w3schools.com/Tags/"> Liste de tous les tags <br></a>
+            <a class="links" href="https://www.w3schools.com/tags/tag_meta.asp"> Tags meta <br></a>
+            <a class="links" href="https://www.w3schools.com/html/html_elements.asp"> Elements <br></a>
 
             <br>CSS<br>
-            <a href="https://www.w3schools.com/css/css_colors.asp"> Colors <br></a>
-            <a href="https://www.w3schools.com/css/css_background.asp"> Background <br></a>
-            <a href="https://www.w3schools.com/css/css_pseudo_classes.asp"> Pseudo classes <br></a>
+            <a class="links" href="https://www.w3schools.com/css/css_colors.asp"> Colors <br></a>
+            <a class="links" href="https://www.w3schools.com/css/css_background.asp"> Background <br></a>
+            <a class="links" href="https://www.w3schools.com/css/css_pseudo_classes.asp"> Pseudo classes <br></a>
 
-            <h2 class="links-title"><a href="../TP1/tp1-cin1.html"><br> TP1 <br></a></h2>
+            <h2 class="links-title"><a class="links" href="../TP1/tp1-cin1.html"><br> TP1 <br></a></h2>
         </div>
     </div>
+    <footer>
+        Clatoire
+    </footer>
 </body>
 
 </html>

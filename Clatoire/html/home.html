@@ -8,6 +8,7 @@
     <meta name="author" content="Peter Chatzigianis">
     <meta name="description" content="Le reportoire pour ses classes">
     <meta name="keywords" content="CIN1, Html, Css">
+    <link rel="icon" href="../gfx/logo.png">
     <title> Clatoire </title>
     <link href="../css/home.css" rel="stylesheet">
 </head>
@@ -15,22 +16,37 @@
 <body>
     <header>
         <span> Clatoire - Le reportoire pour ses classes ! </span>
-        <nav>
-            <ul>
-                <li>
-                    <a class="active links" href="../html/home.html"> Accueil </a>
-                </li>
-                <li>
-                    <a class="links" href="../html/docs.html"> Repertoire </a>
-                </li>
-                <li>
-                    <a class="links" href="16-09-21.html"> 16-09 </a>
-                </li>
-                <li>
-                    <a class="links" href="../TP1/tp1-cin1.html"> TP1 </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="active links" href="../html/home.html"> Accueil </a>
+                    </li>
+                    <li>
+                        <a class="links" href="../html/docs.html"> Repertoire </a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> \/ Cours \/ </button>
+                            <div class="dropdown-content">
+                                <a class="links" href="16-09-21.html"> 16-09 </a>
+                                <a class="links" href="30-09-21.html"> 30-09 </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> \/ TPs \/ </button>
+                            <div class="dropdown-content">
+                                <a class="links" href="../TP1/tp1-cin1.html"> TP1 </a>
+                                <a class="links" href="../TP2/tp2-cin1.html"> TP2 </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
         <div class="header-icons">
             <img src="../gfx/icons8_document.ico" alt="icon folder">
             <img src="../gfx/icons8_mail.ico" alt="icon mail">
@@ -57,24 +73,29 @@
             <!-- To do list -->
             <h3> <br> Amelioriations a venir </h3>
             <h4>
-                > Footer a faire <br>
+                > Layout header <br>
+                > Ajout de musique <br>
                 > Page CMS & Contact (a voir) <br>
+                > Changer de themes (sombre/leger) <br>
                 > Changer de langue (francais/anglais) <br>
-                > Header : Icons pour rediriger & design <br>
             </h4>
 
-            <h3><br> Lien du github : <a href="https://github.com/p-chatzi/clatoire">
+            <h3><br> Lien du github : <a class="links" href="https://github.com/p-chatzi/clatoire">
                     https://github.com/p-chatzi/clatoire </a> </h3>
         </div>
 
         <!-- Right side Content [Redirects to docs list] -->
         <div class="links-docs">
-            <h2 class="titrle-links"> -- Allez vers le repertoire -- </h2>
+            <h2 class="title-links"> -- Allez vers le repertoire -- </h2>
             <a href="docs.html">
                 <img class="img-links" src="../gfx/logosWeb.png" alt="logos html css js">
             </a>
         </div>
     </div>
+
+    <footer>
+        Clatoire
+    </footer>
 </body>
 
 </html>

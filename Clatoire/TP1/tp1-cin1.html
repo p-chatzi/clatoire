@@ -8,7 +8,8 @@
     <meta name="author" content="Peter Chatzigianis">
     <meta name="description" content="Le reportoire pour ses classes">
     <meta name="keywords" content="CIN1, Html, Css">
-    <title> TP1 Chatzigianis Peter </title>
+    <link rel="icon" href="../gfx/logo.png">
+    <title>Clatoire </title>
     <link href="../TP1/tp1-cin1.css" rel="stylesheet">
 </head>
 
@@ -16,32 +17,42 @@
 
     <header>
         <span> Clatoire - Le reportoire pour ses classes ! </span>
-        <nav>
-            <ul>
-                <li>
-                    <a class="links" href="../html/home.html"> Accueil </a>
-                </li>
-                <li>
-                    <a class="links" href="../html/docs.html"> Repertoire </a>
-                </li>
-                <li>
-                    <a class="links" href="../html/16-09-21.html"> 16-09 </a>
-                </li>
-                <li>
-                    <a class="active links" href="tp1-cin1.html"> TP1 </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>
+                        <a class="links" href="../html/home.html"> Accueil </a>
+                    </li>
+                    <li>
+                        <a class="links" href="../html/docs.html"> Repertoire </a>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> \/ Cours \/ </button>
+                            <div class="dropdown-content">
+                                <a class="links" href="../html/16-09-21.html"> 16-09 </a>
+                                <a class="links" href="../html/30-09-21.html"> 30-09 </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="dropbtn"> \/ TPs \/ </button>
+                            <div class="dropdown-content">
+                                <a class="active links" href="../TP1/tp1-cin1.html"> TP1 </a>
+                                <a class="links" href="../TP2/tp2-cin1.html"> TP2 </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
 
         <div class="header-icons">
             <img src="../gfx/icons8_document.ico" alt="icon folder">
             <img src="../gfx/icons8_mail.ico" alt="icon mail">
         </div>
     </header>
-    <!-- 
-    <h2><a href="../html/home.html"> [TEMP] Home </a></h2>
-    <h2><a href="../html/docs.html"> [TEMP] Docs </a></h2>
-    <h2><a href="../html/16-09-21.html"> [TEMP] Classe du 16-09-21 </a></h2> -->
 
     <span class="grid-container">
         <h1 class="title"> TP1 [CIN1] </h1>
