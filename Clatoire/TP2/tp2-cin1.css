@@ -33,10 +33,6 @@ header{
     width: 20%;
 }
 
-.header-icons img{
-    flex-wrap: wrap;
-}
-
 .active{
     background-color: var(--color-pale-yellow);
 }
@@ -99,11 +95,6 @@ body{
     background: var(--color-belge);
 }
 
-img{
-    height: auto;
-    max-width: 30%;
-}
-
 #mainSectionaside:hover{ 
     background: var(--color-belge);
 }
@@ -160,7 +151,7 @@ a:link, a:visited {
 }
 
 .block-img{
-    width: 25%;
+    width: 30%;
     margin-top: 2%;
     margin-bottom: 2%;
     margin-left: 2%;
@@ -169,13 +160,10 @@ a:link, a:visited {
 
 .block-txt{
     display: inline-block;
-    position: inherit;
 }
 
 .grid-container img:hover{
     box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-    transition:transform 0.25s ease;
-    transform: scale(1.1);
 }
 
 .header-icons img:hover{

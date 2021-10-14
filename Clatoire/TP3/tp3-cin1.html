@@ -10,7 +10,8 @@
     <meta name="keywords" content="CIN1, Html, Css">
     <link rel="icon" href="../gfx/logo.png">
     <title>Clatoire </title>
-    <link href="../TP2/tp2-cin1.css" rel="stylesheet">
+    <link href="../TP3/tp3-cin1.css" rel="stylesheet">
+    <script src="../TP3/tp3-cin1.js"></script>
 </head>
 
 <body>
@@ -33,6 +34,8 @@
                             <div class="dropdown-content">
                                 <a class="links" href="../html/16-09-21.html"> 16-09 </a>
                                 <a class="links" href="../html/30-09-21.html"> 30-09 </a>
+                                <a class="links" href="../html/07-10-21.html"> 07-10 </a>
+                                <a class="links" href="../html/14-10-21.html"> 14-10 </a>
                             </div>
                         </div>
                     </li>
@@ -41,17 +44,20 @@
                             <button class="dropbtn"> \/ TPs \/ </button>
                             <div class="dropdown-content">
                                 <a class="links" href="../TP1/tp1-cin1.html"> TP1 </a>
-                                <a class="active links" href="../TP2/tp2-cin1.html"> TP2 </a>
+                                <a class="links" href="../TP2/tp2-cin1.html"> TP2 </a>
+                                <a class="active links" href="../TP3/tp3-cin1.html"> TP3 </a>
+                                <a class="links" href="../TP4/tp4-cin1.html"> TP4 </a>
                             </div>
                         </div>
                     </li>
                 </ul>
             </nav>
         </div>
-
         <div class="header-icons">
-            <img src="../gfx/icons8_play.ico" alt="icon play">
-            <img src="../gfx/icons8_pause.ico" alt="icon pause">
+            <a href="https://github.com/p-chatzi/clatoire">
+                <img src="../gfx/icons8_github.ico" alt="icon git"></a>
+            <a href="https://steamcommunity.com/id/4tune0004/">
+                <img src="../gfx/icons8_steam.ico" alt="icon steam"></a>
             <a href="https://www.youtube.com/channel/UCdzTEwrr_MHWXCqXg10yN3g">
                 <img src="../gfx/icons8_youtube_play_button.ico" alt="icon youtube"></a>
             <a href="https://discord.com/channels/@me/709205414071500871">
@@ -61,28 +67,90 @@
 
     <span class="grid-container">
         <h1 class="title"> TP3 [CIN1] </h1>
-        <!-- Left content block -->
-        <div class="left-side-top">
+        <!-- Left side Content -->
+        <div id="left-side" class="block">
+
+            <fieldset>
+                <legend> Besoin d'un formulaire </legend>
+
+                <div class="info-left">
+                    <label for="nom"><br> Nom : </label>
+                    <input type="text" id="last-name" name="last-name">
+                    </input type>
+                    <label for="nom"><br>Prenom : </label>
+                    <input type="text" id="first-name" name="first-name">
+                    </input type>
+
+                    <select id="sexe">
+                        <option value="Male"> Homme </option>
+                        <option value="Female"> Femme </option>
+                        <option value="Other"> Autre </option>
+                    </select>
+
+                    <br>Email :
+                    <input id="email" type="email" name="emailaddress">
+                    </input type>
+
+                    <br> Telephone :
+                    <input type="tel" name="tel" pattern="" required>
+                    </input type>
+
+                    <label for="message"><br> Message : </label>
+                    <input type="text" id="message" name="message">
+                    </input type>
+                </div>
+
+                <div class="info-right">
+                    <br> Date de naissance (JJ/MM/AAAA) : <br>
+                    <input type="number" class="birthday" name="day" min="1" max="31">
+                    <input type="number" class="birthday" name="month" min="1" max="12">
+                    <input type="number" class="birthday" name="year" min="1900" max="2020">
+
+                    <br> Langue : <br>
+                    <input type="radio" class="language" name="language" value="eng"> Eng <br>
+                    <input type="radio" class="language" name="language" value="fr"> Fr <br>
+                    <input type="radio" class="language" name="language" value="other"> Other <br>
+
+                    <br> Votre avis sur le site : <br>
+                    <input type="range" name="points" min="0" max="10"> </input type>
+
+                    <br><br> Reponse par : <br>
+                    <input type="checkbox" name="vehicle1" value="sms"> SMS <br>
+                    <input type="checkbox" name="vehicle2" value="email"> Email <br>
+                    <input type="checkbox" name="vehicle3" value="pigeon"> Pigeon voyageur <br>
+                </div>
+
+                <button onclick="submit_info()"> Envoyez </button>
+                <button><a href="tp3-cin1.html"> Reinitialiser </a></button>
+            </fieldset>
         </div>
 
-        <div class="left-side-bot">
+        <!-- Right side Content -->
+        <div id="right-side" class="block">
 
-        </div>
+            <fieldset>
+                <legend> Nous envoyez votre CV </legend>
 
-        <!-- Right content block -->
-        <div class="right-side-top">
+                <label for="nom"><br> Nom : </label>
+                <input type="text" id="last-name" name="last-name">
+                </input type>
+                <label for="nom"><br>Prenom : </label>
+                <input type="text" id="first-name" name="first-name">
+                </input type>
 
+                <br>Email :
+                <input id="email" type="email" name="emailaddress">
+                </input type>
 
-        </div>
-
-        <div class="right-side-bot">
-
+                <br> CV :
+                <input type="file" id="myFile" name="filename">
+                <input type="submit" onclick="submit_cv()">
+            </fieldset>
         </div>
     </span>
-
     <footer>
         Clatoire <br>
-        Contact : peter.chatzigianis@yncrea.isen.fr
+        Contact : <a href="mailto:peter.chatzigianis@yncrea.isen.fr">peter.chatzigianis@yncrea.isen.fr</a>
     </footer>
 </body>
 

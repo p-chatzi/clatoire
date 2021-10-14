@@ -76,7 +76,7 @@ body{
 
 #left-side{
     grid-row: 3/13;
-    grid-column: 1/5;
+    grid-column: 1/4;
     border: 2px solid var(--color-blue);
     background: var(--color-belge);
 }
@@ -157,25 +157,4 @@ a:link, a:visited {
 .git-txt{
     height: 100%;
     display: inline-block;
-}
-
-#message{
-    width: 100%;
-    line-height: 30vh;
-}
-
-.info-left{
-    width: 40%;
-    grid-column: 1/2;
-    float: left;
-}
-
-.info-right{
-    width: 40%;
-    grid-column: 3/4;
-    float: right;
-}
-
-input{
-    margin-bottom: 2px;
 }
